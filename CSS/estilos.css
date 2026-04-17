@@ -55,6 +55,12 @@ nav ul li a:hover{
     color: #FF6B6B;
 }
 
+btn-js {
+  margin: 8px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+}
+
 section{
     justify-content: flex-end;
     display: flex;

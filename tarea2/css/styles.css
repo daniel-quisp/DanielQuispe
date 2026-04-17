@@ -603,6 +603,14 @@ progress {
   height: auto;
 }
 
+.portfolio-img {
+  width: 900px;
+  height: 650px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;

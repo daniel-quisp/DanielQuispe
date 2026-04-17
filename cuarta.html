@@ -3,48 +3,52 @@
   <head>
     <link rel="icon" href="images/jpp.jpg" />
     <title>Mi Cuarta Pagina Web</title>
-     <link rel="stylesheet" href="CSS/estilos.css">
-     <script src="js/miprimerJS.js">       
-     </script>
+    <link rel="stylesheet" href="CSS/estilos.css">
   </head>
 
   <body>
     <header>
-       <a href="index.html">
-        <img src="imagenes/jpg.jpg" alt="logo senati">
+      <a href="index.html">
+        <img id="logoSenati" src="imagenes/jpg.jpg" alt="logo senati">
       </a>
       <h1>TITULO</h1>
     </header>
+
     <nav>
-     <ul>
-         <li><a href="index.html">Primera Página</a></li>
-        <li><a href="segundo.html">Segunda Página</a></li>
-        <li><a href="tercera.html">Tercera Página</a></li>
-        <li><a href="cuarta.html">Cuarta Página</a></li>
-        <li><a href="quinta.html">Quinta Página</a></li>
-        <li><a href="sexta.html">Sexta Pagina</a></li>
-        <li><a href="tarea2/index.html">Septima Pagina</a></li>
+      <ul>
+        <li><a id="m1" href="index.html">Primera Página</a></li>
+        <li><a id="m2" href="segundo.html">Segunda Página</a></li>
+        <li><a id="m3" href="tercera.html">Tercera Página</a></li>
+        <li><a id="m4" href="cuarta.html">Cuarta Página</a></li>
+        <li><a id="m5" href="quinta.html">Quinta Página</a></li>
+        <li><a id="m6" href="sexta.html">Sexta Pagina</a></li>
+        <li><a id="m7" href="tarea2/index.html">Septima Pagina</a></li>
       </ul>
     </nav>
+
     <section>
       <article>
         <h3 id="TituloJS">Ejemplos en JS</h3>
-        <img id="carita"  src="imagenes/happy.jpg" alt="feliz" with="150px">
+
+        <img id="carita" src="imagenes/happy.jpg" alt="feliz" width="150px">
+
         <button class="btn btn-primary" onclick="cambiarCarita()">Cambiar carita</button>
         <button class="btn btn-primary" onclick="feliz()">Carita feliz</button>
+        <button class="btn btn-primary btn-js" onclick="nombresNav()">Cambiar nombres de Navegacion</button>
       </article>
-      <button class="btn btn-primary btn-js" onclick="nombresNav()">Cambiar nombres de Navegacion</button>
-       <script src="js/miprimerJS.js"></script>
 
       <article></article>
       <aside></aside>
     </section>
-       <footer>
+
+    <footer>
       <a href="https://senati.blackboard.com/" target="_blank">Blackboard</a>
       <a href="https://github.com/daniel-quisp/DanielQuispe" target="_blank">Mi Repositorio</a>
       <a href="https://arnoldbgq.github.io/instructorGonzalez/" target="_blank">Pagina del Instructor</a>
       <a href="https://github.com/arnoldbgq/instructorGonzalez" target="_blank">Repositorio Instructor</a>
       <p>Todos los derechos del autor reservados</p>
     </footer>
+
+    <script src="js/miprimerJS.js"></script>
   </body>
 </html>

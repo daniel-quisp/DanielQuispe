@@ -19,7 +19,7 @@ function nombresNav(){
     document.getElementById("m4").textContent="js";
     document.getElementById("m5").textContent="tarea de js";
     document.getElementById("m6").textContent="formulario";
-    document.getElementById("m7").textContent="personal";
+    
 }
 
 

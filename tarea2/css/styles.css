@@ -603,8 +603,7 @@ progress {
   height: auto;
 }
 
-.portfolio-item .img-fluid,
-.portfolio-modal .img-fluid {
+.portfolio-item .img-fluid {
   width: 900px !important;
   height: 650px !important;
   object-fit: cover !important;
@@ -625,8 +624,8 @@ progress {
 }
 
 .portfolio-modal .modal-body img {
-    width: 900px !important;
-    height: 650px !important;
+    width: 600px !important;
+    height: 450px !important;
     object-fit: cover !important;
     max-width: none !important;
 }

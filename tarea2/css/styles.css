@@ -603,8 +603,7 @@ progress {
   height: auto;
 }
 
-.portfolio-item img,
-.portfolio-modal img {
+.portfolio-item img,{
     width: 900px !important;
     height: 650px !important;
     object-fit: cover;

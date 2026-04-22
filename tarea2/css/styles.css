@@ -611,7 +611,7 @@ progress {
   max-width: 100% !important;
 }
 
-/* Estilos específicos para imágenes del portafolio */
+
 .portfolio-item img {
     width: 900px !important;
     height: 650px !important;
@@ -619,8 +619,8 @@ progress {
 }
 
 .portfolio-modal img {
-    width: 900px !important;
-    height: 650px !important;
+    width: 600px !important;
+    height: 450px !important;
     object-fit: cover !important;
 }
 

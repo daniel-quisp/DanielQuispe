@@ -603,11 +603,34 @@ progress {
   height: auto;
 }
 
-.portfolio-item img,{
+.portfolio-item .img-fluid,
+.portfolio-modal .img-fluid {
+  width: 900px !important;
+  height: 650px !important;
+  object-fit: cover !important;
+  max-width: 100% !important;
+}
+
+/* Estilos específicos para imágenes del portafolio */
+.portfolio-item img {
     width: 900px !important;
     height: 650px !important;
-    object-fit: cover;
+    object-fit: cover !important;
 }
+
+.portfolio-modal img {
+    width: 900px !important;
+    height: 650px !important;
+    object-fit: cover !important;
+}
+
+.portfolio-modal .modal-body img {
+    width: 900px !important;
+    height: 650px !important;
+    object-fit: cover !important;
+    max-width: none !important;
+}
+
 
 .img-thumbnail {
   padding: 0.25rem;

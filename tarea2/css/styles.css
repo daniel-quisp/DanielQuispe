@@ -603,12 +603,11 @@ progress {
   height: auto;
 }
 
-.portfolio-img {
-  width: 900px;
-  height: 650px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+.portfolio-item img,
+.portfolio-modal img {
+    width: 900px !important;
+    height: 650px !important;
+    object-fit: cover;
 }
 
 .img-thumbnail {
@@ -11053,9 +11052,3 @@ html {
   background-color: #1a252f;
 }
 
-.portfolio-item img,
-.portfolio-modal img {
-    width: 900px !important;
-    height: 650px !important;
-    object-fit: cover;
-}

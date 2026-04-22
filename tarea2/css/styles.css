@@ -618,14 +618,14 @@ progress {
 }
 
 .portfolio-modal img {
-    width: 600px !important;
-    height: 450px !important;
+    width: 500px !important;
+    height: 375px !important;
     object-fit: cover !important;
 }
 
 .portfolio-modal .modal-body img {
-    width: 600px !important;
-    height: 450px !important;
+    width: 500px !important;
+    height: 375px !important;
     object-fit: cover !important;
     max-width: none !important;
 }

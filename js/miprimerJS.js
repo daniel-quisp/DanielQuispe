@@ -72,7 +72,7 @@ function ejm9(){
     Stotal = (Ta+distanciaR*Tb)
     alert("El total sera de: S/."+Stotal)
 }
-/* todo esto hecho con gpt */
+
 function cambiarFondo() {
     document.body.style.backgroundColor = "yellow";
     alert("esto cambia todo el fondo")

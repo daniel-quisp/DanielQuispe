@@ -72,6 +72,30 @@ function ejm9(){
     Stotal = (Ta+distanciaR*Tb)
     alert("El total sera de: S/."+Stotal)
 }
+/* todo esto hecho con gpt */
+function cambiarFondos() {
+    document.body.style.backgroundColor = "lightgray";
+    document.getElementById("principal").style.backgroundColor = "white";
+}
 
+function agrandarImagen() {
+    document.getElementById("imagenQuinta").style.width = "400px";
+}
+
+function cambiarImagen() {
+    document.getElementById("imagenQuinta").src = "imagenes/sad.png";
+}
+
+function eliminarFooter() {
+    document.getElementById("pieQuinta").style.display = "none";
+}
+
+function cambiarTitulo() {
+    document.getElementById("tituloQuinta").textContent = "Nuevo título";
+}
+
+function cambiarTexto() {
+    document.getElementById("textoQuinta").textContent = "Este texto fue cambiado con JavaScript.";
+}
 
 

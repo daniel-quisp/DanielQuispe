@@ -74,8 +74,8 @@ function ejm9(){
 }
 /* todo esto hecho con gpt */
 function cambiarFondos() {
-    document.body.style.backgroundColor = "lightgray";
-    document.getElementById("principal").style.backgroundColor = "white";
+    document.body.style.backgroundColor = "rose";
+    document.getElementById("principal").style.backgroundColor = "purple";
 }
 
 function agrandarImagen() {

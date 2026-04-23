@@ -66,7 +66,7 @@ function eje02() {
 }
 
 function ejm9(){
-    let distanciaR = 20
+    let distanciaR = 120
     let Ta = 10
     let Tb = 3
     Stotal = (Ta+distanciaR*Tb)

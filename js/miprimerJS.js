@@ -73,9 +73,8 @@ function ejm9(){
     alert("El total sera de: S/."+Stotal)
 }
 /* todo esto hecho con gpt */
-function cambiarFondos() {
-    document.body.style.backgroundColor = "pink";
-    document.getElementById("principal").style.backgroundColor = "purple";
+function cambiarFondo() {
+    document.body.style.backgroundColor = "yellow";
 }
 
 function agrandarImagen() {

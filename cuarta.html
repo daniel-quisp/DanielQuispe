@@ -32,7 +32,29 @@
         <h3 id="TituloJS">Ejemplos en JS</h3>
         <img id="carita" src="imagenes/happy.jpg" alt="feliz" width="150px">
       </article>
-      
+
+      <article>
+        <h3>Ejemplo Formulario con JS</h3> 
+          <form id="formCalculadora" action="#" method="post">
+            <label>Numero 1: </label>
+            <input type="number" id="numero1" placeholder="ingrese un numero">
+            <br>
+            <label>Numero 2: </label>
+            <input type="number" id ="numero2" placeholder="ingrese un numero">
+            <br>
+            <label>Operación</label>
+            <select id="operacion">
+              <option value="sum">Suma</option>
+              <option value="rest">Resta</option>
+              <option value="mul">Multiplicación</option>
+              <option value="div">Disvisión</option>
+            </select>
+            <br><br>
+            <button type="submit">Calcular</button>
+            <button type="reset">Borrar</button>
+          </form>
+        <p id="resultado"></p>
+      </article>
       <aside>
         <button class="btn btn-primary" onclick="cambiarCarita()">Cambiar carita</button>
         <button class="btn btn-primary" onclick="feliz()">Carita feliz</button>

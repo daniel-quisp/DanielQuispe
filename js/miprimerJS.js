@@ -83,7 +83,7 @@ function agrandarImagen() {
 }
 
 function cambiarImagen() {
-    document.getElementById("imagenQuinta").src = "imagenes/sad.png";
+    document.getElementById("imagenQuinta").src = "imagenes/dino2.jpg";
 }
 
 function eliminarFooter() {

@@ -79,7 +79,7 @@ function cambiarFondos() {
 }
 
 function agrandarImagen() {
-    document.getElementById("imagenQuinta").style.width = "400px";
+    document.getElementById("imagenQuinta").style.width = "600px";
 }
 
 function cambiarImagen() {
@@ -91,11 +91,11 @@ function eliminarFooter() {
 }
 
 function cambiarTitulo() {
-    document.getElementById("tituloQuinta").textContent = "Nuevo título";
+    document.getElementById("tituloQuinta").textContent = "Tarea de JS";
 }
 
 function cambiarTexto() {
-    document.getElementById("textoQuinta").textContent = "Este texto fue cambiado con JavaScript.";
+    document.getElementById("textoQuinta").textContent = "mira cambie el texto xdxdx";
 }
 
 

@@ -75,26 +75,32 @@ function ejm9(){
 /* todo esto hecho con gpt */
 function cambiarFondo() {
     document.body.style.backgroundColor = "yellow";
+    alert("esto cambia todo el fondo")
 }
 
 function agrandarImagen() {
     document.getElementById("imagenQuinta").style.width = "600px";
+    alert("esto agranda la imagen")
 }
 
 function cambiarImagen() {
     document.getElementById("imagenQuinta").src = "imagenes/dino2.jpg";
+    alert("Cambiara la imagen")
 }
 
 function eliminarFooter() {
     document.getElementById("pieQuinta").style.display = "none";
+    alert("elimina el footer de la pagina")
 }
 
 function cambiarTitulo() {
     document.getElementById("tituloQuinta").textContent = "Tarea de JS";
+    alert("Cambiara el titulo")
 }
 
 function cambiarTexto() {
     document.getElementById("textoQuinta").textContent = "mira cambie el texto xdxdx";
+    alert("Cambiara el texto abajo de la imagen")
 }
 
 

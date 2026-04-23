@@ -65,6 +65,13 @@ function eje02() {
     alert("Son " + amigos + " amigos y la cuota del total S/." + total + " es de: S/." + cuota);
 }
 
+function ejm9(){
+    let distanciaR = 20
+    let Ta = 10
+    let Tb = 3
+    Stotal = (Ta+distanciaR*Tb)
+    alert("El total sera de: S/."+Stotal)
+}
 
 
 

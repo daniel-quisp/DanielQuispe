@@ -74,7 +74,7 @@ function ejm9(){
 }
 /* todo esto hecho con gpt */
 function cambiarFondos() {
-    document.body.style.backgroundColor = "rose";
+    document.body.style.backgroundColor = "pink";
     document.getElementById("principal").style.backgroundColor = "purple";
 }
 

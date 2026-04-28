@@ -14,10 +14,10 @@ const imagenesPorSeccion = {
     "imagenes/semillas/semilla2.jpg",
     "imagenes/semillas/semilla3.jpg"
   ],
-  "Granos y legumbres": [
-    "imagenes/granos/grano1.jpg",
-    "imagenes/granos/grano2.jpg",
-    "imagenes/granos/grano3.jpg"
+  "legumbres": [
+    "imagenes/legumbres/legumbre1.jpg",
+    "imagenes/legumbres/legumbre2.jpg",
+    "imagenes/legumbres/legumbre3.jpg"
   ]
 };
 
@@ -82,7 +82,7 @@ const categorias = {
   verduras: "Verduras",
   frutas: "Frutas",
   semillas: "Semillas",
-  granos: "Granos y legumbres"
+  granos: "legumbres"
 };
 
 const imagenesPorCategoria = {
@@ -98,9 +98,9 @@ const imagenesPorCategoria = {
     "imagenes/semillas/s1.jpg",
     "imagenes/semillas/s2.jpg"
   ],
-  granos: [
-    "imagenes/granos/g1.jpg",
-    "imagenes/granos/g2.jpg"
+  legumbres: [
+    "imagenes/legumbres.l1.jpg",
+    "imagenes/legumbres.l2.jpg"
   ]
 };
 

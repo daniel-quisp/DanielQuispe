@@ -134,6 +134,18 @@ const imagenesPorCategoria = {
     "imagenes/legumbres/l8.jpg",
     "imagenes/legumbres/l9.jpg",
     "imagenes/legumbres/l10.jpg"
+  ],
+  granos: [
+    "imagenes/legumbres/l1.jpg",
+    "imagenes/legumbres/l2.jpg",
+    "imagenes/legumbres/l3.jpg",
+    "imagenes/legumbres/l4.jpg",
+    "imagenes/legumbres/l5.jpg",
+    "imagenes/legumbres/l6.jpg",
+    "imagenes/legumbres/l7.jpg",
+    "imagenes/legumbres/l8.jpg",
+    "imagenes/legumbres/l9.jpg",
+    "imagenes/legumbres/l10.jpg"
   ]
 };
 

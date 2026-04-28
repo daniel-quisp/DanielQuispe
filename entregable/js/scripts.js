@@ -13,6 +13,7 @@ const imagenesPorSeccion = {
     "imagenes/semillas/semilla1.jpg",
     "imagenes/semillas/semilla2.jpg",
     "imagenes/semillas/semilla3.jpg"
+    
   ],
   "legumbres": [
     "imagenes/legumbres/legumbre1.jpg",
@@ -87,30 +88,61 @@ const categorias = {
 
 const imagenesPorCategoria = {
   verduras: [
-    "imagenes/verduras/v1.jpeg",
-    "imagenes/verduras/v2.jpeg"
+    "imagenes/verduras/v1.jpg",
+    "imagenes/verduras/v2.jpg",
+    "imagenes/verduras/v3.jpg",
+    "imagenes/verduras/v4.jpg",
+    "imagenes/verduras/v5.jpg",
+    "imagenes/verduras/v6.jpg",
+    "imagenes/verduras/v7.jpg",
+    "imagenes/verduras/v8.jpg",
+    "imagenes/verduras/v9.jpg",
+    "imagenes/verduras/v10.jpg"
   ],
   frutas: [
     "imagenes/frutas/f1.jpg",
-    "imagenes/frutas/f2.jpg"
+    "imagenes/frutas/f2.jpg",
+    "imagenes/frutas/f3.jpg",
+    "imagenes/frutas/f4.jpg",
+    "imagenes/frutas/f5.jpg",
+    "imagenes/frutas/f6.jpg",
+    "imagenes/frutas/f7.jpg",
+    "imagenes/frutas/f8.jpg",
+    "imagenes/frutas/f9.jpg",
+    "imagenes/frutas/f10.jpg"
   ],
   semillas: [
     "imagenes/semillas/s1.jpg",
-    "imagenes/semillas/s2.jpg"
+    "imagenes/semillas/s2.jpg",
+    "imagenes/semillas/s3.jpg",
+    "imagenes/semillas/s4.jpg",
+    "imagenes/semillas/s5.jpg",
+    "imagenes/semillas/s6.jpg",
+    "imagenes/semillas/s7.jpg",
+    "imagenes/semillas/s8.jpg",
+    "imagenes/semillas/s9.jpg",
+    "imagenes/semillas/s10.jpg"
   ],
   legumbres: [
-    "imagenes/legumbres.l1.jpg",
-    "imagenes/legumbres.l2.jpg"
+    "imagenes/legumbres/l1.jpg",
+    "imagenes/legumbres/l2.jpg",
+    "imagenes/legumbres/l3.jpg",
+    "imagenes/legumbres/l4.jpg",
+    "imagenes/legumbres/l5.jpg",
+    "imagenes/legumbres/l6.jpg",
+    "imagenes/legumbres/l7.jpg",
+    "imagenes/legumbres/l8.jpg",
+    "imagenes/legumbres/l9.jpg",
+    "imagenes/legumbres/l10.jpg"
   ]
 };
 
 function obtenerImagen(categoria, indice) {
   const lista = imagenesPorCategoria[categoria];
-  if (!lista || lista.length === 0) {
-    return "";
-  }
+  if (!lista || lista.length === 0) return "";
   return lista[indice % lista.length];
 }
+
 function comprar(nombre) {
   alert(`La compra de "${nombre}" aún no está disponible porque el proyecto no tiene backend.`);
 }

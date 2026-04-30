@@ -31,7 +31,7 @@ function obtenerImagenSeccion(categoria, indice) {
 }
 const productos = [
   // Seccion de verdura  cada seccion tiene 10 productos
-  { nombre: "Lechuga", categoria: "verduras", precio: 3.50, descripcion: "Fresca y crocante para ensaladas." },
+  { nombre: "Lechuga", categoria: "verduras", precio: 3.50, descripcion: "Fresca y crocante para ensaladas.", imagen: "imagenes/verduras/v1.jpg" },
   { nombre: "Espinaca", categoria: "verduras", precio: 4.20, descripcion: "Ideal para jugos y salteados." },
   { nombre: "Zanahoria", categoria: "verduras", precio: 3.80, descripcion: "Buena para jugos y guisos." },
   { nombre: "Tomate", categoria: "verduras", precio: 4.00, descripcion: "Muy usado en la cocina diaria." },
@@ -43,7 +43,7 @@ const productos = [
   { nombre: "Cebolla", categoria: "verduras", precio: 2.90, descripcion: "Base de muchas recetas." },
 
   // Seccion de Frutas
-  { nombre: "Manzana", categoria: "frutas", precio: 5.40, descripcion: "Dulce y práctica para el día." },
+ { nombre: "Manzana", categoria: "frutas", precio: 5.40, descripcion: "Dulce y práctica para el día.", imagen: "imagenes/frutas/f1.jpg" },
   { nombre: "Plátano", categoria: "frutas", precio: 4.90, descripcion: "Buena fuente de energía." },
   { nombre: "Naranja", categoria: "frutas", precio: 4.70, descripcion: "Ideal para jugos naturales." },
   { nombre: "Fresa", categoria: "frutas", precio: 7.20, descripcion: "Perfecta para postres." },
@@ -55,7 +55,7 @@ const productos = [
   { nombre: "Melón", categoria: "frutas", precio: 7.00, descripcion: "Muy refrescante." },
 
   // Seccion de Semillas
-  { nombre: "Chía", categoria: "semillas", precio: 9.50, descripcion: "Usada en bebidas y postres." },
+  { nombre: "Chía", categoria: "semillas", precio: 9.50, descripcion: "Usada en bebidas y postres.", imagen: "imagenes/semillas/s1.jpg" },
   { nombre: "Linaza", categoria: "semillas", precio: 8.30, descripcion: "Aporta fibra." },
   { nombre: "Sésamo", categoria: "semillas", precio: 7.60, descripcion: "Útil en panes y snacks." },
   { nombre: "Girasol", categoria: "semillas", precio: 8.10, descripcion: "Buen snack natural." },

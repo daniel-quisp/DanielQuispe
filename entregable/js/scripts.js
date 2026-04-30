@@ -231,8 +231,8 @@ if (filtrados.length === 0) {
 
   const imagen = obtenerImagen(p.categoria, index);
 
-      col.innerHTML = `
-      <div class="card h-100 shadow-sm border-0" style="border-radius:1rem; overflow:hidden;">
+  col.innerHTML = `
+    <div class="card h-100 shadow-sm border-0" style="border-radius:1rem; overflow:hidden; cursor:pointer;">
       <img src="${imagen}" class="card-img-top" alt="${p.nombre}" style="height:300px; object-fit:cover;">
       <div class="card-body d-flex flex-column">
         <span class="badge text-bg-success mb-2">${categorias[p.categoria]}</span>
@@ -244,12 +244,21 @@ if (filtrados.length === 0) {
     </div>
   `;
 
-      const btn = col.querySelector("button");
-  btn.addEventListener("click", () => comprar(p.nombre));
+  const tarjeta = col.querySelector(".card");
+  tarjeta.addEventListener("click", (e) => {
+    if (e.target.tagName.toLowerCase() === "button") return;
+    mostrarDetalleProducto(p.nombre, p.descripcion, p.precio, imagen);
+  });
+
+  const btn = col.querySelector("button");
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    comprar(p.nombre);
+  });
 
   contenedor.appendChild(col);
 });
-}
+
 
 function prepararFormularios() {
   const formContacto = document.getElementById("formContacto");
@@ -276,3 +285,30 @@ document.addEventListener("DOMContentLoaded", () => {
   prepararFormularios();
   renderProductos();
 });
+
+function mostrarDetalleProducto(nombre, descripcion, precio, imagen) {
+  const detalle = document.getElementById("detalle-producto");
+  if (!detalle) return;
+
+  detalle.innerHTML = `
+    <div class="card shadow-sm border-0 p-3">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <img src="${imagen}" class="img-fluid rounded" alt="${nombre}">
+        </div>
+        <div class="col-md-8">
+          <h3 class="mb-2">${nombre}</h3>
+          <p class="mb-2">${descripcion}</p>
+          <p class="fw-bold text-success mb-3">Precio: S/ ${precio.toFixed(2)}</p>
+          <button class="btn btn-success" onclick="comprar('${nombre}')">Comprar</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  detalle.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function comprar(nombre) {
+  alert(`La compra de "${nombre}" aún no está disponible porque el proyecto no tiene backend.`);
+}

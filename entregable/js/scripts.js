@@ -110,31 +110,53 @@ const articulos = {
   }
 };
 
-function mostrarArticulo(slug) {
+function mostrarModalProducto(nombre, descripcion, precio, imagen, categoria) {
+  
+  const slug = nombre.toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
+    .replace(/\s+/g, "");                              
+
   const art = articulos[slug];
-  if (!art) return;
 
-  const seccion = document.getElementById("seccion-articulo");
-  if (!seccion) return;
+  document.getElementById("modalArticuloTitulo").textContent = nombre;
 
-  seccion.innerHTML = `
-    <div class="card border-0 shadow-sm p-4" style="border-radius:1rem;">
-      <button class="btn btn-sm btn-outline-secondary mb-3" onclick="cerrarArticulo()">← Volver</button>
+  if (art) {
+    
+    document.getElementById("modalArticuloContenido").innerHTML = `
       <div class="row align-items-start g-4">
         <div class="col-md-4">
-          <img src="${art.imagen}" class="img-fluid rounded" alt="${art.titulo}" style="max-height:280px; object-fit:cover; width:100%;">
+          <img src="${imagen}" class="img-fluid rounded" alt="${nombre}"
+               style="max-height:260px; object-fit:cover; width:100%;">
         </div>
         <div class="col-md-8">
-          <h2 class="fw-bold mb-3">${art.titulo}</h2>
+          <span class="badge text-bg-success mb-2">${categorias[categoria]}</span>
+          <p class="fw-bold text-success fs-5">S/ ${precio.toFixed(2)}</p>
           ${art.contenido}
+          <button class="btn btn-success mt-2" onclick="comprar('${nombre}')">Comprar</button>
         </div>
       </div>
-    </div>
-  `;
-  seccion.style.display = "block";
-  seccion.scrollIntoView({ behavior: "smooth", block: "start" });
-}
+    `;
+  } else {
+    
+    document.getElementById("modalArticuloContenido").innerHTML = `
+      <div class="row align-items-center g-4">
+        <div class="col-md-4">
+          <img src="${imagen}" class="img-fluid rounded" alt="${nombre}"
+               style="max-height:260px; object-fit:cover; width:100%;">
+        </div>
+        <div class="col-md-8">
+          <span class="badge text-bg-success mb-2">${categorias[categoria]}</span>
+          <p class="text-secondary">${descripcion}</p>
+          <p class="fw-bold text-success fs-5">S/ ${precio.toFixed(2)}</p>
+          <button class="btn btn-success mt-2" onclick="comprar('${nombre}')">Comprar</button>
+        </div>
+      </div>
+    `;
+  }
 
+  const modal = new bootstrap.Modal(document.getElementById("modalArticulo"));
+  modal.show();
+}
 function cerrarArticulo() {
   const seccion = document.getElementById("seccion-articulo");
   if (seccion) {
@@ -221,9 +243,9 @@ function renderProductos() {
 
     const tarjeta = col.querySelector(".card");
     tarjeta.addEventListener("click", (e) => {
-      if (e.target.tagName.toLowerCase() === "button") return;
-      mostrarDetalleProducto(p.nombre, p.descripcion, p.precio, imagen);
-    });
+  if (e.target.tagName.toLowerCase() === "button") return;
+  mostrarModalProducto(p.nombre, p.descripcion, p.precio, imagen, p.categoria);
+});
 
     col.querySelector("button").addEventListener("click", (e) => {
       e.stopPropagation();

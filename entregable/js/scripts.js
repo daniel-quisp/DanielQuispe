@@ -281,7 +281,7 @@ function prepararFormularios() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  //crearBotonesFlotantes();
+  crearBotonesFlotantes();
   prepararFormularios();
   renderProductos();
 });
